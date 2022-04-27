@@ -1,9 +1,9 @@
 import * as React from 'react';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Modal from '@material-ui/core/Modal';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 import { FootballContext } from "../../../providers/FootballContext";
-import Table from '@material-ui/core/Table';
+import Table from '@mui/material/Table';
 import PicksBody from './PicksBody';
 
 

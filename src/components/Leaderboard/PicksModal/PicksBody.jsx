@@ -1,6 +1,6 @@
 import React from "react";
-import TableBody from '@material-ui/core/TableBody';
-import TableRow from "@material-ui/core/TableRow";
+import TableBody from '@mui/material/TableBody';
+import TableRow from "@mui/material/TableRow";
 import PicksCell from "./PicksCell";
 
 const PicksBody = ({ selectedPlayer }) => {

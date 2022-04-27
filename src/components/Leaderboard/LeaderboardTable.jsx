@@ -1,11 +1,11 @@
 import React from 'react';
 import LeaderboardRow from "./LeaderboardRow";
 import { reducerKeys } from "../../reducers/footballReducer";
-import Table from '@material-ui/core/Table';
-import TableHead from "@material-ui/core/TableHead";
-import TableBody from '@material-ui/core/TableBody';
-import TableRow from "@material-ui/core/TableRow";
-import TableCell from "@material-ui/core/TableCell";
+import Table from '@mui/material/Table';
+import TableHead from "@mui/material/TableHead";
+import TableBody from '@mui/material/TableBody';
+import TableRow from "@mui/material/TableRow";
+import TableCell from "@mui/material/TableCell";
 import {FootballContext} from "../../providers/FootballContext";
 
 const LeaderboardTable = () => {
@@ -25,8 +25,9 @@ const LeaderboardTable = () => {
                     <TableCell>Rank</TableCell>
                     <TableCell>Name</TableCell>
                     <TableCell>Points</TableCell>
-                    <TableCell>Potential</TableCell>
-                    <TableCell>Week 1 Picks</TableCell>
+                    <TableCell>Max</TableCell>
+                    <TableCell>Elimination</TableCell>
+                    <TableCell>Picks</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>

@@ -1,35 +1,36 @@
-import React, {useMemo} from 'react';
+import React, { useMemo } from 'react';
 import styled from "@emotion/styled";
 import LeaderboardTable from "../components/Leaderboard/LeaderboardTable";
 import PicksModal from "../components/Leaderboard/PicksModal/PicksModal";
-import {FootballDataProvider} from "../providers/FootballContext";
+import { FootballDataProvider } from "../providers/FootballContext";
 
 const Title = styled.h1`
-text-align: center;
+    text-align: center;
 `;
 
 const Container = styled.div`
-margin: auto;
-width: 800px;
-padding-top: 1Rem;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    max-width: 1000px;
+    padding-top: 1Rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
 `;
 
 const ColumnLayout = styled.div`
-display: grid;
-grid-template-columns: 78% 38%;
-grid-column-gap: 1Rem;
+    grid-template-columns: 78% 38%;
+    grid-column-gap: 1Rem;
 `;
 
 const HomePage = () => {
-    return(
+    return (
         <FootballDataProvider>
             <Container>
-                <Title>Family NFL Picks</Title>
-                <PicksModal/>
+                <Title>Week 1 NFL Picks</Title>
+                <PicksModal />
                 <ColumnLayout>
-                    <div>
-                        <LeaderboardTable/>
-                    </div>
+                    <LeaderboardTable />
                 </ColumnLayout>
             </Container>
         </FootballDataProvider>

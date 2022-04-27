@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "@material-ui/core";
-import TableRow from "@material-ui/core/TableRow";
-import TableCell from "@material-ui/core/TableCell";
+import { Button } from "@mui/material/";
+import TableRow from "@mui/material/TableRow";
+import TableCell from "@mui/material/TableCell";
 
 const playerHasPicks = (player) => {return 'picks' in player};
 
@@ -13,6 +13,7 @@ const LeaderboardRow = ({ player, rank, handleOpen }) => (
     <TableCell>{player.name}</TableCell>
     <TableCell>{player.points}</TableCell>
     <TableCell>{player.potential}</TableCell>
+    <TableCell>X</TableCell>
     <TableCell>
         {playerHasPicks(player)
             ? (<Button

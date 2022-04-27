@@ -1,15 +1,6 @@
 import React from "react";
-import MuiTableCell from "@material-ui/core/TableCell";
-import { withStyles } from '@material-ui/core/styles';
+import TableCell from "@mui/material/TableCell";
 import { FootballContext } from "../../../providers/FootballContext";
-
-// Remove line under every table row (looks weird with the color BG)
-const TableCell = withStyles({
-    root: {
-        borderBottom: "none",
-        borderRadius: "2em"
-    }
-})(MuiTableCell);
 
 const PicksCell = ({pick}) => {
     const { state: { teams } } = React.useContext(FootballContext);
