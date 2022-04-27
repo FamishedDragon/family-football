@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.test {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.picks-cell {
+    width: 50%;
+    background-color: darkgrey;
+}
+
+.win-cell {
+    background-color:rgb(127, 224, 127);
+}
+
+.loss-cell {
+    background-color: rgb(231, 96, 96);
+}
+
+.picks-row p {
+    display: inline-block;
+    font-size: 45px;
+}
+
+.logo-img {
+    transform: translate(10%, 25%);
+    display: inline-block;
+    width: 65%;
+}
+
+.checkmark {
+    position: relative;
+    display:flex;
+    transform: rotate(45deg);
+    height: 250px;
+    width: 120px;
+    margin-left: 60%; 
+    border-bottom: 7px solid #78b13f;
+    border-right: 7px solid #78b13f;
+  }
+
+  .test {
+      color: #78b13f;
+  }

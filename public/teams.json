@@ -1,0 +1,18 @@
+[
+    {"name": "Bills",       "city": "Buffalo"},
+    {"name": "Colts",       "city": "Indianapolis"},
+    {"name": "Chiefs",      "city": "Kansas_City"},
+    {"name": "Titans",      "city": "Tennessee"},
+    {"name": "Buccaneers",  "city": "Tampa_Bay"},
+    {"name": "Redskins",    "city": "Washington"},
+    {"name": "Cardinals",   "city": "Arizona"},
+    {"name": "Browns",      "city": "Cleaveland"},
+    {"name": "Patriots",    "city": "New_England"},
+    {"name": "Vikings",     "city": "Minnesota"},
+    {"name": "Rams",        "city": "Los_Angeles_R"},
+    {"name": "Cowboys",     "city": "Dallas"},
+    {"name": "Saints",      "city": "New_Orleans"},
+    {"name": "Ravens",      "city": "Baltimore"},
+    {"name": "Chargers",    "city": "Los_Angeles_C"},
+    {"name": "Packers",     "city": "Green_Bay"}
+]
