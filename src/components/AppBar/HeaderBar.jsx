@@ -8,6 +8,7 @@ import BrowserMenu from './BrowserMenu';
 import UserIcon from './UserIcon';
 
 const pages = ['Season Standings', 'My Picks', 'Elimination'];
+const logo = "Football Picks";
 
 export const AppBarContext = React.createContext([{}, () => {}]);;
 
@@ -17,8 +18,6 @@ export const HeaderBar = () => {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
-
-    const logo = "Football Picks";
 
     return (
         <AppBar position="static">
