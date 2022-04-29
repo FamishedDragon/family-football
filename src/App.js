@@ -2,9 +2,8 @@ import React from 'react';
 import './App.css';
 import styled from "@emotion/styled";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import PokemonSearch from './scenes/PokemonSearch';
 import HomePage from './scenes/HomePage';
-import {HeaderBar} from './components/AppBar/HeaderBar';
+import HeaderBar from './components/AppBar';
 import { StyledEngineProvider } from '@mui/material/styles';
 
 function App() {
@@ -29,7 +28,6 @@ function App() {
             </Router>
         </StyledEngineProvider>
     );
-
 }
 
 export default App;

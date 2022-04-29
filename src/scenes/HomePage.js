@@ -1,7 +1,7 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import styled from "@emotion/styled";
-import LeaderboardTable from "../components/Leaderboard/LeaderboardTable";
-import PicksModal from "../components/Leaderboard/PicksModal/PicksModal";
+import LeaderboardTable from "../components/Leaderboard";
+import PicksModal from "../components/Leaderboard/PicksModal";
 import { FootballDataProvider } from "../providers/FootballContext";
 
 const Title = styled.h1`
