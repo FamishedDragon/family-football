@@ -3,20 +3,7 @@ import styled from "@emotion/styled";
 import LeaderboardTable from "../components/Leaderboard";
 import PicksModal from "../components/Leaderboard/PicksModal";
 import { FootballDataProvider } from "../providers/FootballContext";
-
-const Title = styled.h1`
-    text-align: center;
-`;
-
-const Container = styled.div`
-    margin: auto;
-    display: block;
-    justify-content: center;
-    max-width: 1000px;
-    padding-top: 1Rem;
-    background-color: #fff;
-    border-radius: 0.75rem;
-`;
+import { Title, Container } from '../styles/style';
 
 const ColumnLayout = styled.div`
     grid-template-columns: 78% 38%;
