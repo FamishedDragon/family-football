@@ -80,4 +80,122 @@
             {"value": 1, "team": "Packers"}
         ]
     }
+    ,
+    {
+        "id" : 5,
+        "week 1" : [
+            {"value": 16, "team": "Bills", "status": "win"},
+            {"value": 15, "team": "49ers", "status": "win"},
+            {"value": 14, "team": "Chiefs", "status": "win"},
+            {"value": 13, "team": "Titans"},
+            {"value": 12, "team": "Buccaneers"},
+            {"value": 11, "team": "Redskins", "status": "loss"},
+            {"value": 10, "team": "Seahawks"},
+            {"value": 9, "team": "Browns", "status": "win"},
+            {"value": 8, "team": "Patriots", "status": "loss"},
+            {"value": 7, "team": "Vikings"},
+            {"value": 6, "team": "Rams"},
+            {"value": 5, "team": "Cowboys"},
+            {"value": 4, "team": "Saints"},
+            {"value": 3, "team": "Ravens", "status": "win"},
+            {"value": 2, "team": "Chargers"},
+            {"value": 1, "team": "Packers"}
+        ],
+        "week 2" : [
+            {"value": 16, "team": "Bills", "status": "win"},
+            {"value": 15, "team": "Colts", "status": "loss"},
+            {"value": 14, "team": "Chiefs", "status": "win"},
+            {"value": 13, "team": "Titans"},
+            {"value": 12, "team": "Buccaneers"},
+            {"value": 11, "team": "Redskins", "status": "loss"},
+            {"value": 10, "team": "Cardinals"},
+            {"value": 9, "team": "Browns", "status": "win"},
+            {"value": 8, "team": "Patriots", "status": "win"},
+            {"value": 7, "team": "Vikings"},
+            {"value": 6, "team": "Rams"},
+            {"value": 5, "team": "Cowboys"},
+            {"value": 4, "team": "Saints"},
+            {"value": 3, "team": "Ravens", "status": "win"},
+            {"value": 2, "team": "Chargers"},
+            {"value": 1, "team": "Packers"}
+        ]
+    },
+    {
+        "id" : 6,
+        "week 1" : [
+            {"value": 16, "team": "Bills", "status": "win"},
+            {"value": 15, "team": "Colts", "status": "loss"},
+            {"value": 14, "team": "Chiefs", "status": "win"},
+            {"value": 13, "team": "Titans"},
+            {"value": 12, "team": "Buccaneers"},
+            {"value": 11, "team": "Redskins", "status": "loss"},
+            {"value": 10, "team": "Cardinals"},
+            {"value": 9, "team": "Browns", "status": "win"},
+            {"value": 8, "team": "Patriots", "status": "win"},
+            {"value": 7, "team": "Vikings"},
+            {"value": 6, "team": "Rams"},
+            {"value": 5, "team": "Cowboys"},
+            {"value": 4, "team": "Saints"},
+            {"value": 3, "team": "Ravens", "status": "win"},
+            {"value": 2, "team": "Chargers"},
+            {"value": 1, "team": "Packers"}
+        ],
+        "week 2" : [
+            {"value": 16, "team": "Bills", "status": "win"},
+            {"value": 15, "team": "Colts", "status": "loss"},
+            {"value": 14, "team": "Chiefs", "status": "win"},
+            {"value": 13, "team": "Titans"},
+            {"value": 12, "team": "Buccaneers"},
+            {"value": 11, "team": "Redskins", "status": "loss"},
+            {"value": 10, "team": "Cardinals"},
+            {"value": 9, "team": "Browns", "status": "win"},
+            {"value": 8, "team": "Patriots", "status": "win"},
+            {"value": 7, "team": "Vikings"},
+            {"value": 6, "team": "Rams"},
+            {"value": 5, "team": "Cowboys"},
+            {"value": 4, "team": "Saints"},
+            {"value": 3, "team": "Ravens", "status": "win"},
+            {"value": 2, "team": "Chargers"},
+            {"value": 1, "team": "Packers"}
+        ]
+    },
+    {
+        "id" : 7,
+        "week 1" : [
+            {"value": 16, "team": "Bills", "status": "win"},
+            {"value": 15, "team": "Colts", "status": "loss"},
+            {"value": 14, "team": "Chiefs", "status": "win"},
+            {"value": 13, "team": "Titans"},
+            {"value": 12, "team": "Buccaneers"},
+            {"value": 11, "team": "Redskins", "status": "loss"},
+            {"value": 10, "team": "Cardinals"},
+            {"value": 9, "team": "Browns", "status": "win"},
+            {"value": 8, "team": "Patriots", "status": "win"},
+            {"value": 7, "team": "Vikings"},
+            {"value": 6, "team": "Rams"},
+            {"value": 5, "team": "Cowboys"},
+            {"value": 4, "team": "Saints"},
+            {"value": 3, "team": "Ravens", "status": "win"},
+            {"value": 2, "team": "Chargers"},
+            {"value": 1, "team": "Packers"}
+        ],
+        "week 2" : [
+            {"value": 16, "team": "Bills", "status": "win"},
+            {"value": 15, "team": "Colts", "status": "loss"},
+            {"value": 14, "team": "Chiefs", "status": "win"},
+            {"value": 13, "team": "Titans"},
+            {"value": 12, "team": "Buccaneers"},
+            {"value": 11, "team": "Redskins", "status": "loss"},
+            {"value": 10, "team": "Cardinals"},
+            {"value": 9, "team": "Browns", "status": "win"},
+            {"value": 8, "team": "Patriots", "status": "win"},
+            {"value": 7, "team": "Vikings"},
+            {"value": 6, "team": "Rams"},
+            {"value": 5, "team": "Cowboys"},
+            {"value": 4, "team": "Saints"},
+            {"value": 3, "team": "Ravens", "status": "win"},
+            {"value": 2, "team": "Chargers"},
+            {"value": 1, "team": "Packers"}
+        ]
+    }
 ]

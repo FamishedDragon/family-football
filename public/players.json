@@ -17,5 +17,20 @@
     "id": 4,
     "name": "Cass",
     "points": 100
+  },
+  {
+    "id": 5,
+    "name": "Daisy",
+    "points": 0
+  },
+  {
+    "id": 6,
+    "name": "Chris",
+    "points": 30
+  },
+  {
+    "id": 7,
+    "name": "Madison",
+    "points": 55
   }
 ]
