@@ -1,39 +1,44 @@
+html {
+    background: linear-gradient(135deg, #434343 10%, #000000 100%) no-repeat center center fixed;
+}
+
 .App {
   text-align: center;
 }
 
-.test {
-    overflow-y: scroll;
-    height: 100%;
+.win-text {
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 }
 
-.picks-cell {
-    width: 50%;
-    background-color: darkgrey;
+.loss-text {
+    background-color: #eb4511;
+    background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
 }
 
-.win-cell {
-    background-color:rgb(127, 224, 127);
-}
-
-.loss-cell {
-    background-color: rgb(231, 96, 96);
-}
-
-.picks-row p {
+.pick-team-name {
+    font-size: 20px;
     display: inline-block;
-    font-size: 45px;
+    width: 37%;
+    margin: auto;
+    padding-right: 2em;
+    padding-top: 10px;
+}
+
+.picks-value {
+    font-size: 50px;
+    margin: auto;
 }
 
 .logo-img {
-    transform: translate(10%, 25%);
+    width: 30%;
+    flex-basis: auto;
     display: inline-block;
-    width: 65%;
 }
 
 .checkmark {
     position: relative;
-    display:flex;
+    display: flex;
     transform: rotate(45deg);
     height: 250px;
     width: 120px;
@@ -42,6 +47,7 @@
     border-right: 7px solid #78b13f;
   }
 
-  .test {
-      color: #78b13f;
+  .my-background {
+    background-image: linear-gradient(135deg, #90F7EC 10%, #32CCBC 100%);
   }
+
