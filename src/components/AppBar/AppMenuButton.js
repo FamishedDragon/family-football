@@ -47,8 +47,8 @@ const AppMenuButton = ({ pages, logo }) => {
                     }}
                 >
                     {pages.map((page) => (
-                        <MenuItem key={page} onClick={handleCloseNavMenu}>
-                            <Typography textAlign="center">{page}</Typography>
+                        <MenuItem key={page.name} onClick={() => { handleCloseNavMenu();}}>
+                            <Typography textAlign="center">{page.name}</Typography>
                         </MenuItem>
                     ))}
                 </Menu>

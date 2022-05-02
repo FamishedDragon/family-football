@@ -13,8 +13,8 @@ const ColumnLayout = styled.div`
 const HomePage = () => {
     return (
         <FootballDataProvider>
-            <Container>
-                <Title>Week 1 NFL Picks</Title>
+            <Container style={{height: "100%", paddingBottom: "0px"}}>
+                <Title>Week 3 NFL Picks</Title>
                 <PicksModal />
                 <ColumnLayout>
                     <LeaderboardTable />

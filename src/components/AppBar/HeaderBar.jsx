@@ -6,18 +6,24 @@ import BrowserLogo from './BrowserLogo';
 import AppMenuButton from './AppMenuButton';
 import BrowserMenu from './BrowserMenu';
 import UserIcon from './UserIcon';
+import { useNavigate } from 'react-router-dom';
 
-const pages = ['Season Standings', 'My Picks', 'Elimination'];
+const pages = [{name: 'Leaderboard', link:'/'}, {name: 'Season Standings', link: '/standings'}, {name: 'My Picks', link: '/picks'}];
 const logo = "Football Picks";
 
 export const AppBarContext = React.createContext([{}, () => {}]);;
 
 export const HeaderBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const navigate = useNavigate();
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+
+    const navToPage = (page) => {
+        navigate(page);
+    }
 
     return (
         <AppBar position="static">
@@ -25,7 +31,8 @@ export const HeaderBar = () => {
                 value={{
                     anchorElNav,
                     setAnchorElNav,
-                    handleCloseNavMenu
+                    handleCloseNavMenu,
+                    navToPage
                 }}>
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
