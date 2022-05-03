@@ -1,36 +1,78 @@
 [{
     "id": 1,
     "name": "Robbie",
-    "points": 50
+    "points": 50,
+    "potential": 75,
+    "elimination" : {
+        "week 1" : "Seahawks",
+        "week 2" : "Browns",
+        "week 3" : "Jaguars"
+    }
   },
   {
     "id": 2,
     "name": "Bam",
-    "points": 15
+    "points": 15,
+    "potential": 50,
+    "elimination" : {
+        "week 1" : "Seahawks",
+        "week 2" : "Browns",
+        "week 3" : "Vikings"
+    }
   },
   {
     "id": 3,
     "name": "Blake",
-    "points": 60
+    "points": 60,
+    "potential": 80,
+    "elimination" : {
+        "week 1" : "49ers",
+        "week 2" : "Browns",
+        "week 3" : "Seahawks"
+    }
   },
   {
     "id": 4,
     "name": "Cass",
-    "points": 100
+    "points": 100,
+    "potential": 100,
+    "elimination" : {
+        "week 1" : "Seahawks",
+        "week 2" : "Browns",
+        "week 3" : "49ers"
+    }
   },
   {
     "id": 5,
     "name": "Daisy",
-    "points": 0
+    "points": 0,
+    "potential": 20,
+    "elimination" : {
+        "week 1" : "Seahawks",
+        "week 2" : "Browns",
+        "week 3" : "Raiders"
+    }
   },
   {
     "id": 6,
     "name": "Chris",
-    "points": 30
+    "points": 30,
+    "potential": 50,
+    "elimination" : {
+        "week 1" : "Seahawks",
+        "week 2" : "Colts",
+        "week 3" : "Browns"
+    }
   },
   {
     "id": 7,
     "name": "Madison",
-    "points": 55
+    "points": 55,
+    "potential": 75,
+    "elimination" : {
+        "week 1" : "Seahawks",
+        "week 2" : "Browns",
+        "week 3" : "Bengals"
+    }
   }
 ]

@@ -99,7 +99,7 @@
             {"value": 4, "team": "Saints"},
             {"value": 3, "team": "Ravens", "status": "win"},
             {"value": 2, "team": "Chargers"},
-            {"value": 1, "team": "Packers"}
+            {"value": 1, "team": "Raiders"}
         ],
         "week 2" : [
             {"value": 16, "team": "Bills", "status": "win"},
