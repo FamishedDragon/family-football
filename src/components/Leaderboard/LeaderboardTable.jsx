@@ -44,7 +44,7 @@ const LeaderboardTable = () => {
                                 handleOpen={(player) => dispatch({
                                     type: reducerKeys.SET_SELECTED_PLAYER,
                                     payload: {selectedPlayer: {...player, picks: getPlayerPicks(player)}, open: true}
-                                })} 
+                                })}
                             />
                         );
                     })}

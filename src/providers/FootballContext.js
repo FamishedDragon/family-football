@@ -53,17 +53,26 @@ export function FootballDataProvider({ children }) {
                 })
     }, []);
 
-    const handleClose = () => {
+    // Handle closing of the picks modal
+    const handlePicksModalClose = () => {
         dispatch({
             type: reducerKeys.SET_SELECTED_PLAYER,
             payload: { selectedPlayer: null, open: false }
         });
     };
 
+    // Get the image name for a given team log or BG
+    const getTeamImageName = (teamName) => {
+        const team = state.teams.find(t => t.name.toLowerCase() === teamName.toLowerCase());
+
+        return team?.city ? `${team.city}.webp` : "";
+    };
+
     return (
         <FootballContext.Provider
             value={{
-                handleClose,
+                handlePicksModalClose,
+                getTeamImageName,
                 state,
                 dispatch
             }}
