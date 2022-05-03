@@ -37,7 +37,7 @@ const modalGridStyle = {
 export default function PicksModal() {
     const {
         state: { openModal, selectedPlayer },
-        handleClose: handleClose
+        handlePicksModalClose: handleClose
     } = React.useContext(FootballContext);
 
     return (

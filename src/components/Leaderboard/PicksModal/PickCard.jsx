@@ -2,16 +2,22 @@ import React from 'react'
 import { FootballContext } from '../../../providers/FootballContext';
 import { Pick } from './Pick';
 
+// Common style elements regardless of BG
+const picksStatusStyle = {
+    fontSize: 28,
+    display: 'inline-block',
+    width: '40%',
+    margin: 'auto',
+    borderRadius: '5px',
+    textAlign: 'center',
+    borderStyle:'solid',
+    borderWidth: '2px'
+};
+
 const PickCard = ({ pickData }) => {
-    const { state: { teams } } = React.useContext(FootballContext);
-    // Get image name of a logo for a given team
-    const getTeamLogo = (teamName) => {
-        const team = teams.find(t => t.name.toLowerCase() === teamName.toLowerCase());
+    const { getTeamImageName } = React.useContext(FootballContext);
 
-        return team?.city ? `${team.city}.webp` : "";
-    }
-
-    const teamImgName = getTeamLogo(pickData.team);
+    const teamImgName = getTeamImageName(pickData.team);
 
     return (
         <Pick sx={{
@@ -22,7 +28,7 @@ const PickCard = ({ pickData }) => {
                 <p className="picks-value">{pickData.value}.</p>
                 <p className="pick-team-name">{pickData.team}</p>
                 {pickData.status
-                    ? (<p className={`${pickData.status}-text`} style={{fontSize: 28, display: 'inline-block', width: '40%', margin: 'auto', borderRadius: '5px', textAlign: 'center', borderStyle:'solid', borderWidth: '2px'}}>{pickData.status.toUpperCase()}</p>)
+                    ? (<p className={`${pickData.status}-text`} style={picksStatusStyle}>{pickData.status.toUpperCase()}</p>)
                     : null}
             </div>
 
