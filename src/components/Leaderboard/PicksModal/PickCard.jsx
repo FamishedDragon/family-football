@@ -21,8 +21,7 @@ const PickCard = ({ pickData }) => {
 
     return (
         <Pick sx={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/teamLogos/BG/${teamImgName})`,
-            display: 'inline-block'
+            backgroundImage: `url(${process.env.PUBLIC_URL}/teamLogos/BG/${teamImgName})`
         }}>
             <div style={{ width: '67%', display: 'inline-block', marginTop: '0px', color: 'white' }}>
                 <p className="picks-value">{pickData.value}.</p>

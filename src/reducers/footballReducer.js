@@ -3,7 +3,8 @@ export const reducerKeys = {
     SET_PLAYERS: 'SET_PLAYERS',
     SET_SELECTED_PLAYER: 'SET_SELECTED_PLAYER',
     SET_PICKS: 'SET_PICKS',
-    SET_TEAMS: 'SET_TEAMS'
+    SET_TEAMS: 'SET_TEAMS',
+    SET_PICKS_MODAL_LAYOUT: 'SET_PICKS_MODAL_LAYOUT',
 }
 
 const footballReducer = (state, action) => {
@@ -34,6 +35,11 @@ const footballReducer = (state, action) => {
                     ...state,
                     teams: action.payload
                 }
+                case reducerKeys.SET_PICKS_MODAL_LAYOUT:
+                    return {
+                        ...state,
+                        pickListLayout: action.payload
+                    }
         default:
             throw new Error(`Unknown Action: ${action.type}`);
     }

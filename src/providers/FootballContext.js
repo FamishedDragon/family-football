@@ -9,7 +9,8 @@ export function FootballDataProvider({ children }) {
         selectedPlayer: null,
         playerData: [],
         teams: [],
-        openModal: false
+        openModal: false,
+        pickListLayout: false
     });
 
     // Get player data

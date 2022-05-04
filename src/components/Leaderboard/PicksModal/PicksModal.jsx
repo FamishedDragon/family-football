@@ -4,9 +4,10 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { FootballContext } from "../../../providers/FootballContext";
 import Switch from '@mui/material/Switch';
-import PickCard from './PickCard';
 import { FormControlLabel, FormGroup } from '@mui/material';
-
+import PicksCardLayout from './PicksCardLayout';
+import { reducerKeys } from '../../../reducers/footballReducer';
+import PicksListLayout from './PickListLayout';
 
 const modalStyle = {
     position: 'absolute',
@@ -25,19 +26,11 @@ const modalStyle = {
     overflowY: 'auto',
 };
 
-const modalGridStyle = {
-    display: 'grid',
-    columnGap: 3,
-    rowGap: 1,
-    gridTemplateColumns: 'repeat(2, 1fr)',
-    gridAutoRows: '40px',
-    margin:0
-}
-
 export default function PicksModal() {
     const {
-        state: { openModal, selectedPlayer },
-        handlePicksModalClose: handleClose
+        state: { openModal, selectedPlayer, pickListLayout },
+        handlePicksModalClose: handleClose,
+        dispatch
     } = React.useContext(FootballContext);
 
     return (
@@ -52,19 +45,23 @@ export default function PicksModal() {
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         <b>{selectedPlayer?.name}'s Picks</b>
                         <FormGroup>
-                            <FormControlLabel control={<Switch/>}label="List Format"/>
+                            <FormControlLabel 
+                                control={
+                                    <Switch 
+                                        checked={pickListLayout} 
+                                        onChange={() => dispatch({
+                                            type: reducerKeys.SET_PICKS_MODAL_LAYOUT,
+                                            payload: !pickListLayout
+                                    })}/>
+                                }
+                                label="List Format"
+                            />
                         </FormGroup>
-                        
                     </Typography>
-                    <Box
-                        sx={modalGridStyle}
-                    >
-                        {selectedPlayer?.picks["week 1"].map(pick => {
-                            return (
-                                <PickCard pickData={pick} key={pick.value}/>
-                            )
-                        })}
-                    </Box>
+                    {pickListLayout
+                        ? (<PicksListLayout/>)
+                        :(<PicksCardLayout/>)
+                    }
                 </Box>
             </Modal>
         </div>

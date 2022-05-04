@@ -13,21 +13,21 @@ const ColumnLayout = styled.div`
 `;
 
 const style = {
-    height: "100%", 
+    height: "100%",
     paddingBottom: "0px",
 }
 
 const HomePage = () => {
     return (
         <FootballDataProvider>
-            <Container style={{marginTop:'1rem'}}>
-            <TableContainer sx={style} component={Paper}>
-                <Title>Week 3 NFL Picks</Title>
-                <PicksModal />
-                <ColumnLayout>
-                    <LeaderboardTable />
-                </ColumnLayout>
-            </TableContainer>
+            <Container style={{ marginTop: '1rem' }}>
+                <TableContainer sx={style} component={Paper}>
+                    <Title>Week 3 NFL Picks</Title>
+                    <PicksModal />
+                    <ColumnLayout>
+                        <LeaderboardTable />
+                    </ColumnLayout>
+                </TableContainer>
             </Container>
         </FootballDataProvider>
     )

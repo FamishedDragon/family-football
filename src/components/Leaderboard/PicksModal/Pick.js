@@ -19,7 +19,7 @@ export const Pick = (props) => {
                 gridRow: 'span 3',
                 backgroundPosition: '50% center',
                 backgroundSize: 'cover',
-                display: 'flex',
+                display: 'inline-block',
                 ...sx,
             }}
             {...other}
